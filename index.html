@@ -3,10 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <title>Anupam Biswas — Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1220;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      color: #e5e7eb;
+      min-height: 100vh;
+    }
+    header {
+      background: #f4f4f0; color: #111;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 20px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo span.box {
+      background: #111; color: #fff; font-weight: 700;
+      padding: 12px; border-radius: 12px;
+    }
+    .logo small { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #666; display: block; }
+    .cv {
+      border: 2px solid #ccc; border-radius: 999px;
+      padding: 10px 18px; color: #111; text-decoration: none; font-weight: 600;
+    }
+    main { max-width: 700px; margin: 0 auto; padding: 60px 24px; }
+    .badge {
+      display: inline-block; font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+      border: 1px solid #334155; border-radius: 999px; padding: 10px 16px; color: #94a3b8;
+    }
+    .badge::before {
+      content: ''; display: inline-block; width: 10px; height: 10px;
+      background: #22c55e; border-radius: 50%; margin-right: 8px;
+    }
+    .hi { font-family: 'JetBrains Mono', monospace; color: #f97316; margin-top: 40px; font-size: 20px; }
+    h1 { font-size: 52px; color: #fff; margin: 8px 0 24px; font-weight: 800; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    .tags span {
+      font-family: 'JetBrains Mono', monospace; font-size: 14px;
+      border: 1px solid #334155; border-radius: 999px; padding: 10px 18px;
+      background: rgba(255,255,255,0.03);
+    }
+    p.intro { font-size: 20px; line-height: 1.7; color: #8b95a7; margin-bottom: 36px; }
+    .btn {
+      display: block; text-align: center; text-decoration: none;
+      padding: 18px; border-radius: 999px; font-weight: 700; font-size: 18px; margin-bottom: 16px;
+    }
+    .btn.primary { background: #166b5a; color: #fff; }
+    .btn.outline { border: 2px solid #334155; color: #fff; }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Anupam Biswas</h1>
-  <p>Data Analyst | Power BI | SQL | Excel | Python | Retool</p>
+  <header>
+    <div class="logo">
+      <span class="box">AB</span>
+      <div>Anupam Biswas<small>DATA ANALYST</small></div>
+    </div>
+    <a class="cv" href="cv.pdf" download>Download CV</a>
+  </header>
+
+  <main>
+    <div class="badge">Open to Data Analyst / BI / MIS roles</div>
+    <div class="hi">Hi, I'm</div>
+    <h1>Anupam Biswas</h1>
+
+    <div class="tags">
+      <span>Data Analyst</span>
+      <span>Power BI</span>
+      <span>Advanced Excel</span>
+      <span>SQL</span>
+      <span>Python</span>
+      <span>Retool</span>
+      <span>Regex</span>
+    </div>
+
+    <p class="intro">I turn raw data into insights that drive better decisions. Cleaning, analyzing, and visualizing information through interactive dashboards and clear, actionable reporting.</p>
+
+    <a class="btn primary" href="#projects">View My Projects →</a>
+    <a class="btn outline" href="#contact">Contact Me</a>
+  </main>
 </body>
 </html>
